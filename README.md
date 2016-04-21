@@ -1,4 +1,4 @@
-# job-descriptions
+# Increments Job Descriptions
 [Increments株式会社](http://increments.co.jp/)における各職種のJob Descriptionを公開しています。
 
 ## 公開中のJob Descriptions
@@ -7,7 +7,9 @@
 - [Product Manager Job Description](https://github.com/increments/job-descriptions/blob/master/product_manager.ja.md)
 
 ## エントリー
-[![Entry](images/entry.png)](https://docs.google.com/a/qiita.com/forms/d/1DwbADEvGWeEpEtPPTrotDpRUyy5Wr4vsyqV3og86g4c/viewform)
+```
+$ open http://bit.ly/increments-job-apply
+```
 
 ## ライセンス
 このコンテンツは、特に明示されている場合を除いて、次のライセンスに従います。
@@ -23,7 +25,7 @@
      href="http://increments.co.jp">
     <span property="dct:title">Increments</span></a>
   has waived all copyright and related or neighboring rights to
-  <span property="dct:title">Job Descriptions</span>.
+  <span property="dct:title">Increments Job Descriptions</span>.
 This work is published from:
 <span property="vcard:Country" datatype="dct:ISO3166"
       content="JP" about="http://increments.co.jp">

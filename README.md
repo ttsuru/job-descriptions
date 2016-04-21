@@ -1,4 +1,4 @@
-# Increments Job Descriptions
+# Increments Job Descriptions [![Build Status](https://travis-ci.org/increments/job-descriptions.svg?branch=master)](https://travis-ci.org/increments/job-descriptions)
 [Increments株式会社](http://increments.co.jp/)における各職種のJob Descriptionを公開しています。
 
 ## 公開中のJob Descriptions

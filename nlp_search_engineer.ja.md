@@ -2,7 +2,7 @@
 
 Incrementsの「ソフトウェア開発をよくすることで世界の進化を加速させる」という企業ミッションを実現するために、蓄積されたデータの活用を主眼に置いて開発に携わり、分析モデルの設計から機能の実装まで行う。
 
-具体的には既存のログのテキストマイニングをしていろいろな分析をし、Qiita/Qiita:Team上の広義の検索を改善する。コアの実装は自分でするが、Railsに組み込むところは[Application Engineer](./application_engineer.ja.md)が変わりにやるかも知れない。
+具体的には既存のログのテキストマイニングをしていろいろな分析をし、Qiita/Qiita:Team上の広義の検索を改善する。コアの実装は自分でするが、Railsに組み込むところは[Application Engineer](./application_engineer.ja.md)が代わりにやるかもしれない。
 
 ## 責任
 

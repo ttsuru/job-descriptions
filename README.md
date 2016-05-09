@@ -5,6 +5,7 @@
 - [Application Engineer Job Description](https://github.com/increments/job-descriptions/blob/master/application_engineer.ja.md)
 - [NLP & Search Engineer Job Description](https://github.com/increments/job-descriptions/blob/master/nlp_search_engineer.ja.md)
 - [Product Manager Job Description](https://github.com/increments/job-descriptions/blob/master/product_manager.ja.md)
+- [Designer Job Description](https://github.com/increments/job-descriptions/blob/master/designer.ja.md)
 
 ## エントリー
 ```

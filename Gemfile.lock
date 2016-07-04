@@ -1,21 +1,15 @@
-GIT
-  remote: git://github.com/yuku-t/redpen_ruby.git
-  revision: 9cfe3e5f607552a501779a7390f9070fb274f3dd
-  branch: input-format
-  specs:
-    redpen_ruby (0.4)
-
 GEM
   remote: https://rubygems.org/
   specs:
     rake (10.5.0)
+    redpen (0.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rake
-  redpen_ruby!
+  redpen
 
 BUNDLED WITH
    1.11.2

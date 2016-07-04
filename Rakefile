@@ -1,4 +1,4 @@
-require 'redpen_ruby'
+require 'redpen'
 
 DEFAULT_LANG = 'en'
 PROJECT_MARKDOWNS = %w(README.md)
@@ -10,7 +10,7 @@ task :redpen do
     match = /\.(?<lang>\w+)\.md$/.match(target_file)
     lang = match ? match[:lang].downcase : DEFAULT_LANG
     config_file = "./config/redpen/#{lang}.xml"
-    redpen = RedpenRuby.check(config_file, target_file, format: 'markdown')
+    redpen = Redpen.check(config_file, target_file, format: 'markdown')
     unless redpen.valid?
       redpen.messages.each do |message|
         puts message

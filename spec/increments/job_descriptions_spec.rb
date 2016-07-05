@@ -14,13 +14,13 @@ RSpec.describe Increments::JobDescriptions do
     context 'when an invalid filename is given' do
       let(:filename) { 'doesnotexists.md' }
 
-      it { expect { subject }.to raise_error(described_class::NotFound) }
+      it { should be_nil }
     end
 
     context 'when a filename in document markdowns given' do
       let(:filename) { described_class::DOCUMENT_MARKDOWNS.sample }
 
-      it { expect { subject }.to raise_error(described_class::NotFound) }
+      it { should be_nil }
     end
   end
 

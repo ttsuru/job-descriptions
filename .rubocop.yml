@@ -1,0 +1,9 @@
+Metrics/LineLength:
+  Max: 125
+
+Style/Documentation:
+  Enabled: false
+
+Style/FileName:
+  Exclude:
+    - '**/increments-job_descriptions.rb'

@@ -1,7 +1,13 @@
+require 'bundler/gem_tasks'
 require 'redpen'
+require 'rspec/core/rake_task'
+require 'rubocop/rake_task'
 
-DEFAULT_LANG = 'en'
-PROJECT_MARKDOWNS = %w(README.md)
+RSpec::Core::RakeTask.new(:spec)
+RuboCop::RakeTask.new
+
+DEFAULT_LANG = 'en'.freeze
+PROJECT_MARKDOWNS = %w(README.md).freeze
 
 task :redpen do
   error = false
@@ -11,15 +17,12 @@ task :redpen do
     lang = match ? match[:lang].downcase : DEFAULT_LANG
     config_file = "./config/redpen/#{lang}.xml"
     redpen = Redpen.check(config_file, target_file, format: 'markdown')
-    unless redpen.valid?
-      redpen.messages.each do |message|
-        puts message
-      end
-      error = true
-    end
+    next if redpen.valid?
+    redpen.messages.each { |message| puts message }
+    error = true
   end
 
   exit 1 if error
 end
 
-task default: [:redpen]
+task default: [:rubocop, :spec, :redpen]

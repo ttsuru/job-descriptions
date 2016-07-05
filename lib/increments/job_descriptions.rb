@@ -11,12 +11,10 @@ module Increments
       # @param filename [String]
       # @return [Increments::JobDescriptions::JobDescription, nil]
       def [](filename)
-        return nil if DOCUMENT_MARKDOWNS.include?(filename)
+        return nil unless keys.include?(filename)
         File.open(project_root.join(filename)) do |file|
           JobDescription.new(filename, file.read)
         end
-      rescue Errno::ENOENT
-        nil
       end
 
       # @yieldparam [Increments::JobDescriptions::JobDescription]
@@ -31,6 +29,7 @@ module Increments
 
       private
 
+      # @return [Array<String>]
       def markdown_filenames
         Dir.glob(project_root.join('*.md'))
            .map { |path| path.split('/').last }

@@ -20,4 +20,19 @@ RSpec.describe Increments::JobDescriptions::JobDescription do
     let(:markdown) { "# Hello\nworld\n" }
     it { should match a_string_starting_with("\n<h1>\n") }
   end
+
+  describe '#title' do
+    subject { job_description.title }
+
+    context 'when it starts with h1' do
+      let(:markdown) { "# #{title}\nfoo bar baz\n" }
+      let(:title) { 'Hello world engineer' }
+      it { should eq title }
+    end
+
+    context 'when it does not start with h1' do
+      let(:markdown) { "hello world\nfoo bar baz\n" }
+      it { should be_nil }
+    end
+  end
 end

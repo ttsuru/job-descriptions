@@ -55,6 +55,9 @@ require 'increments-job_descriptions'
 
 job_description = Increments::JobDescriptions['application_engineer.ja.md']
 job_description.filename #=> 'application_engineer.ja.md'
+job_description.title    #=> 'Application Engineer Job Description'
 job_description.to_s     # markdown
 job_description.to_html  # html
+
+Increments::JobDescriptions['doesnotexist'] #=> nil
 ```

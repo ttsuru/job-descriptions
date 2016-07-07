@@ -7,10 +7,13 @@
 
 ## 公開中のJob Descriptions
 
-- [Application Engineer Job Description](https://github.com/increments/job-descriptions/blob/master/application_engineer.ja.md)
-- [NLP & Search Engineer Job Description](https://github.com/increments/job-descriptions/blob/master/nlp_search_engineer.ja.md)
-- [Product Manager Job Description](https://github.com/increments/job-descriptions/blob/master/product_manager.ja.md)
-- [Designer Job Description](https://github.com/increments/job-descriptions/blob/master/designer.ja.md)
+- [アプリケーションエンジニア](https://github.com/increments/job-descriptions/blob/master/application_engineer.ja.md)
+- [検索エンジニア](https://github.com/increments/job-descriptions/blob/master/nlp_search_engineer.ja.md)
+- [プロダクトマネージャー](https://github.com/increments/job-descriptions/blob/master/product_manager.ja.md)
+- [デザイナー](https://github.com/increments/job-descriptions/blob/master/designer.ja.md)
+- [採用担当](https://github.com/increments/job-descriptions/blob/master/recruiter.ja.md)
+- [エンジニアアルバイト](https://github.com/increments/job-descriptions/blob/master/part_time_engineer.ja.md)
+- [コミュニティサポートアルバイト](https://github.com/increments/job-descriptions/blob/master/part_time_community_support_worker.ja.md)
 
 ## エントリー
 
@@ -55,7 +58,7 @@ require 'increments-job_descriptions'
 
 job_description = Increments::JobDescriptions['application_engineer.ja.md']
 job_description.filename #=> 'application_engineer.ja.md'
-job_description.title    #=> 'Application Engineer Job Description'
+job_description.title    #=> 'アプリケーションエンジニア'
 job_description.to_s     # markdown
 job_description.to_html  # html
 

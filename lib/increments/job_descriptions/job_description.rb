@@ -33,7 +33,24 @@ module Increments
       private
 
       def processor
-        @processor ||= Qiita::Markdown::Processor.new
+        @processor ||= Processor.new
+      end
+
+      class Processor < Qiita::Markdown::Processor
+        def filters # rubocop:disable Metrics/MethodLength
+          [
+            Qiita::Markdown::Filters::Greenmat,
+            Qiita::Markdown::Filters::ImageLink,
+            Qiita::Markdown::Filters::Footnote,
+            Qiita::Markdown::Filters::Code,
+            Qiita::Markdown::Filters::Checkbox,
+            Qiita::Markdown::Filters::Emoji,
+            Qiita::Markdown::Filters::SyntaxHighlight,
+            Qiita::Markdown::Filters::Mention,
+            Qiita::Markdown::Filters::GroupMention,
+            Qiita::Markdown::Filters::Sanitize
+          ]
+        end
       end
     end
   end
